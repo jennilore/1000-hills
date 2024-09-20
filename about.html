@@ -1,203 +1,334 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <title>About Us</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
-<body>
-    <nav class="navbar top-0 left-0 w-[100%] z-10 h-[10vh] flex justify-between items-center py-1 px-2 text-[#fff] fixed">
-        <div class="navbar-logo w-2/12 ">
-            <img class="w-[50%] mt-10" src="./images/1000-hills-logo.png" alt="Logo"> <!-- Replace with your logo -->
-        </div>
-        <ul class="flex lg:space-x-4 font-thin w-8/12 uppercase gap-2 text-sm ">
-            <li class="list-2"><a class="hover:text-[#006838] hover:text-lg" href="#">Home</a></li>
-            <li class="list-2"><a class="hover:text-[#006838] hover:text-lg" href="#">About</a></li>
-            <li class="list-2"><a class="hover:text-[#006838] hover:text-lg" href="#">Community</a></li>
-            <li class="list-2"><a class="hover:text-[#006838] hover:text-lg" href="#">Results</a></li>
+
+<body class="bg-white">
+    <!-- Navbar -->
+    <nav
+    class="navbar fixed top-0 left-0 w-full px-2  z-20 h-[10vh] flex flex-wrap justify-between items-center py-2 bg-white/90 backdrop-blur-lg shadow-lg transition-all duration-300">
+    <!-- Logo -->
+    <div class="navbar-logo w-2/12">
+      <a href="./index.html">
+        <img class="w-[60px] hover:w-[70px] transition-transform duration-300" src="./images/1000-hills-logo.png"
+          alt="Logo" />
+      </a>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <ul class="hidden lg:flex lg:space-x-8 font-600 text-gray-800 uppercase text-sm tracking-wider">
+      <li>
+        <a class="hover:text-green-600 hover:border-b-2 hover:border-green-600 transition-all duration-300"
+          href="./index.html">Home</a>
+      </li>
+      <li>
+        <a class="hover:text-green-600 hover:border-b-2 hover:border-green-600 transition-all duration-300"
+          href="./about.html">About</a>
+      </li>
+      <li>
+        <a class="hover:text-green-600 hover:border-b-2 hover:border-green-600 transition-all duration-300"
+          href="./community.html">Community</a>
+      </li>
+     
+      <li>
+        <a class="hover:text-green-600 hover:border-b-2 hover:border-green-600 transition-all duration-300"
+          href="./events.html">Events<span class="text-yellow-400">&</span>News</a>
+      </li>
+      <li>
+        <a class="hover:text-green-600 hover:border-b-2 hover:border-green-600 transition-all duration-300"
+          href="./register">Contact<span class="text-yellow-400 font-800">/</span>Register</a>
+      </li>
+    </ul>
+
+    <!-- Social Media Links for Desktop -->
+    <div class="hidden lg:flex w-2/12 justify-center space-x-6 text-xl">
+      <a class="hover:text-green-600 hover:scale-110 transition-all duration-300"
+        href="https://www.facebook.com/1000hillsrugby/"><i class="fa-brands fa-facebook-f"></i></a>
+      <a class="hover:text-green-600 hover:scale-110 transition-all duration-300"
+        href="https://www.instagram.com/1000hillsrugby/"><i class="fa-brands fa-instagram"></i></a>
+      <a class="hover:text-green-600 hover:scale-110 transition-all duration-300"
+        href="https://x.com/1000HillsRugby?t=S0PTUa88AFrp6SJs5meJ6A&s=08"><i class="fa-brands fa-x-twitter"></i></a>
+      <a class="hover:text-green-600 hover:scale-110 transition-all duration-300"
+        href="https://www.youtube.com/@1000HillsRugby"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+
+    <!-- Mobile Menu & Social Media -->
+    <div class="relative lg:hidden flex flex-wrap items-center">
+      <!-- Social Media for Mobile -->
+      <div class="flex space-x-4 mr-4">
+        <a class="hover:text-green-600 hover:scale-110 transition-all duration-300"
+          href="https://www.facebook.com/1000hillsrugby/"><i class="fa-brands fa-facebook-f"></i></a>
+        <a class="hover:text-green-600 hover:scale-110 transition-all duration-300"
+          href="https://www.instagram.com/1000hillsrugby/"><i class="fa-brands fa-instagram"></i></a>
+        <a class="hover:text-green-600 hover:scale-110 transition-all duration-300"
+          href="https://x.com/1000HillsRugby?t=S0PTUa88AFrp6SJs5meJ6A&s=08"><i class="fa-brands fa-x-twitter"></i></a>
+        <a class="hover:text-green-600 hover:scale-110 transition-all duration-300"
+          href="https://www.youtube.com/@1000HillsRugby"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+
+      <!-- Mobile Menu Toggle -->
+      <input type="checkbox" id="menu-toggle" class="hidden" />
+      <label for="menu-toggle" class="cursor-pointer text-2xl text-black">
+        <i class="fa-solid fa-bars" id="menu-open-icon"></i>
+        <i class="fa-solid fa-times hidden" id="menu-close-icon"></i>
+      </label>
+
+      <div id="menu"
+        class="absolute top-full right-0 bg-white text-gray-800 w-48 mt-2 rounded-md shadow-lg hidden transition-all duration-300">
+        <ul class="flex flex-col text-left">
+          <li>
+            <a class="hover:bg-green-600 hover:text-white px-4 py-2 transition-all duration-300"
+              href="./index.html">Home</a>
+          </li>
+          <li>
+            <a class="hover:bg-green-600 hover:text-white px-4 py-2 transition-all duration-300" href="./about.html">About</a>
+          </li>
+          <li>
+            <a class="hover:bg-green-600 hover:text-white px-4 py-2 transition-all duration-300" href="./community.html">Community</a>
+          </li>
+          <li>
+            <a class="hover:bg-green-600 hover:text-white px-4 py-2 transition-all duration-300" href="#">EVENTS<span class="text-yellow-400">&</span>NEWS</a>
+          </li>
+          <li>
+            <a class="hover:bg-green-600 hover:text-white px-4 py-2 transition-all duration-300"
+              href="./register.html">CONTACT<span class="text-yellow-400 font-800">/</span>REGISTER</a>
+          </li>
         </ul>
-        <div class="flex w-2/12 list-1">
-            <ul class="flex lg:gap-6 gap-2 justify-center items-center text-md ">
-                <li class="list-2">
-                    <a class="hover:text-[#006838] hover:text-lg" href="https://www.facebook.com/1000hillsrugby/">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-                </li>
-                <li class="list-2">
-                    <a class="hover:text-[#006838] hover:text-lg" href="https://www.instagram.com/1000hillsrugby/">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </li>
-                <li class="list-2">
-                    <a class="hover:text-[#006838] hover:text-lg" href=" https://x.com/1000HillsRugby?t=S0PTUa88AFrp6SJs5meJ6A&s=08 ">
-                        <i class="fa-brands fa-x-twitter"></i>
-                    </a>
-                </li>
-                <li class="list-2">
-                    <a class="hover:text-[#006838] hover:text-lg" href="https://www.youtube.com/@1000HillsRugby">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <i class="icon-1 lg:hidden text-xl pr-3 fa-solid fa-bars"></i>
-        </div>
-    </nav>
+      </div>
+    </div>
+  </nav>
+
 
     <main>
-        <section class="slideshow-container bg-cover bg-no-repeat h-[100vh]  max-w-full grid grid-cols-12 items-center ">
-            <div class="text-container border-l-[10px] flex flex-col gap-2 col-span-9 border-white-500 pl-2 text-white">
-                <p class="text-[20px] font-thin">REPORT: RAMS 84- 85 EAGLES</p>
-                <h1 class="text-8xl font-[650]"> <span class="text-[#006838]">ONE POINT</span> <br> LEAD FOR <br> FINALE </h1>
-            </div>
-        </section>
-        
-        <section class="bg-white justify-center items-center pb-9">
-            <div class="flex-col flex justify-center items-center w-full pt-10">
-                <div class="about-us-logo lg:w-8/12 lg:mx-8 lg:-mt-2 w-full flex justify-center items-center">
-                   <img class="w-[20%] mt-2" src="./images/1000-hills-logo.png" alt="Logo">
-                </div>
-                <p class="text-center mx-[20%] font-mono text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis repellat dolores, veniam adipisci est iure, dolor eaque in illo, </p>
-                <div class="pt-4">
-                    <video class="rounded-md lg:w-[800] h-auto w-[400]" controls>
-                        <source src="movie.mp4" type="video/mp4">
-                        <source src="movie.ogg" type="video/ogg">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-        </section>
-
-        <section class="about-us-section-3 bg-[#145A32] justify-center items-center">
-            <div class="section-3-container gap-2 flex lg:flex-row flex-col justify-center items-center w-[90%] w-full py-10 px-5">
-                
-                <a href="#">
-                    <img class="rounded-md" src="./images/download-4.jpg" alt="">
-                    <div class="-mt-20 text-white pl-2 font-semibold ">
-                        <p>history</p>
-                        <h1 class="text-2xl uppercase">Making touch down since 2014</h1>
-                    </div>
-                </a>
-                
-                <a href="#">
-                    <img class="rounded-md" src="./images/42d17dca-c32a-493d-a269-bd5efdb4d739.jfif" alt="">
-                    <div class="-mt-20 text-white pl-2 font-semibold">
-                        <p>Services</p>
-                        <h1 class="text-2xl uppercase">Advance coaching and Development</h1>
-                    </div>
-                </a>
-                
-                <a href="#">
-                    <img class="rounded-md" src="./images/45f6edcd-5032-417e-b61a-d6a3bc556c35-2.jpg" alt="">
-                    <div class="-mt-20 text-white pl-2 font-semibold" >
-                        <p>Program</p>
-                        <h1 class="text-2xl uppercase">Competitive youth rugby program</h1>
-                    </div>
-                </a>
-                
-                <a href="#">
-                    <img class="rounded-md " src="./images/team-8.jpg" alt="">
-                    <div class="-mt-20 text-white pl-2 font-semibold">
-                        <p>Team</p>
-                        <h1 class="text-2xl uppercase">Senior, Women, and Youth </h1>
-                    </div>
+        <section
+            class="upper-class lg:pt-[10%] md:pt-[15%] sm:pt-[20%] pt-[30%] w-full mx-auto flex flex-col items-center bg-fixed justify-center gap-6 text-center py-24 rounded-lg shadow-lg bg-cover bg-center relative"
+            style="background-image: url('./images/freinds.jpeg');">
+            <div class="absolute inset-0 bg-black opacity-70 rounded-lg"></div>
+            <div class="relative z-10 w-[90%] sm:w-[80%] md:w-[70%] lg:w-[60%] mx-auto text-white">
+                <h1 class="font-extrabold text-xl sm:text-2xl md:text-3xl lg:text-6xl leading-tight">
+                    Join the Journey of Excellence with 1000 Hills Rugby Club!
+                </h1>
+                <p class="lg:text-base text-start text-md md:text-lg lg:text-xl mt-4">
+                    Discover the power of teamwork, discipline, and sportsmanship at 1000 Hills Rugby Club. From
+                    developing top-tier rugby talent to fostering a community spirit, we are committed to shaping future
+                    leaders both on and off the field.
+                </p>
+                <a href="#about-us"
+                    class="mt-8 lg:text-lg md:text-md text-sm inline-block lg:px-6 px-3 py-3 bg-[#DCBB26] hover:bg-white hover:text-[#DCBB26] text-black font-semibold rounded-lg shadow-md transition duration-300 ease-in-out">
+                    Learn More
                 </a>
             </div>
         </section>
 
-        <section class="about-us-section-4 w-full">
-            <div class="about-us-section-4-container w-full flex lg:flex-row flex-col">
-                <div class="lg:w-6/12 bg-[#02120b] ">
-                    <div class="border-l-4 border-blue-400 pl-6 mt-10 ml-8">
-                        <p class="text-white ">Mission</p>
-                        <h1 class="text-8xl text-white  w-1/2">Education </h1>
-                        <h1 class="text-8xl text-blue-400  w-1/2">Training</h1>
-                    </div>
-                    <p class="text-white pt-6 pl-6 text-xl font-semibold w-9/12 antialiased">
-                        With a membership of 190+ players drawn, we have a high level of competition.
-                    </p>
-                    <p class="text-white pt-6 pl-6 font-thin w-9/12 antialiased mb-4">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”
-                    </p>
-                    <button class="border border-blue-400 text-blue-400 hover:bg-blue-700 text-white ml-6 p-3 rounded-md">
-                        <a href="#">
-                            Become A Member
-                        </a>
-                    </button>
+
+
+
+
+        <section
+            class="second-section flex flex-col md:flex-row w-[95%] sm:w-[85%] md:w-[80%] mx-auto justify-center items-center gap-8 mt-8">
+            <div class="flex order-2 lg:order-1 md:order-1 flex-col gap-4 w-full md:w-1/2 text-center md:text-left">
+                <div
+                    class="w-[50px] h-[50px] bg-[#00743F] rounded-full flex justify-center items-center mx-auto md:mx-0">
+                    <i class="fas fa-cloud-sun text-black text-3xl"></i>
                 </div>
-                <div class="lg:w-6/12 bg-[#dcbb26] ">
-                    <img class="w-8/12" src="./images/download-removebg-preview.png" alt="">
-                </div>
+                <h2 class="text-[#00743F] font-bold text-xl md:text-2xl">Pride of the 1000 Hills Rugby Team:</h2>
+                <h2 class="text-2xl md:text-3xl font-extrabold text-black">Strength, Unity, and Passion!</h2>
+                <p id="real-project"
+                    class="text-black font-bold lg:text-base text-start lg:text-lg md:text-md text-sm w-full mx-auto md:mx-0 px-1">
+                    The 1000 Hills Rugby Team is more than just a sports club—it's a community driven by a shared
+                    passion for excellence, teamwork, and resilience. Our players, ranging from young talents to
+                    experienced athletes, are united by their love for the game. With every match, we carry the pride of
+                    Rwanda's hills, demonstrating our dedication to the sport and our community.
+                </p>
+            </div>
+            <div class="w-full md:w-1/2 order-1 lg:order-2 md:order-2">
+                <img class="object-cover w-full h-auto transform hover:scale-105 transition duration-500 ease-in-out"
+                    src="./images/freinds.jpeg" alt="1000 Hills Rugby Team">
             </div>
         </section>
 
-        <section>
-            <div class="slideshow-container">
 
-                <div class="mySlides fade">
-                    <img src="img1.jpg" style="width:100%">
-                    <div class="text">Caption Text</div>
-                </div>
-            
-                <div class="mySlides fade">
-                    <img src="img2.jpg" style="w">
-                    <div class="text">Caption Two</div>
-                </div>
-            
-                <div class="mySlides fade">
-                    <img src="img3.jpg" style="width:100%">
-                    <div class="text">Caption Three</div>
-                </div>
 
-                <div class="mySlides fade">
-                    <img src="img3.jpg" style="width:100%">
-                    <div class="text">Caption Three</div>
+        <section
+        class="second-section flex flex-col md:flex-row w-[95%] sm:w-[85%] md:w-[80%] mx-auto justify-center items-center gap-8 mt-8">
+        <div class="flex order-1 lg:order-2 md:order-2 flex-col gap-4 w-full md:w-1/2 text-center md:text-left">
+          <div class="w-[50px] h-[50px] bg-[#00743F] rounded-full flex justify-center items-center mx-auto md:mx-0">
+            <i class="fa fa-trophy text-black text-3xl"></i>
+          </div>
+          <h2 class="text-[#00743F] font-bold text-xl md:text-2xl">Celebrating Achievements:</h2>
+          <h2 class="text-2xl md:text-3xl font-extrabold text-black">Honoring Excellence on and off the Field</h2>
+          <p
+            class="text-black font-bold lg:text-base text-start lg:text-lg md:text-md text-sm w-full mx-auto md:mx-0 px-1">
+            At 1000 Hills Rugby Team, we take immense pride in our players' achievements. Whether it's a local tournament win or personal milestones, we celebrate every success with the same enthusiasm and dedication that drives us on the field. Join us in honoring the spirit of excellence that defines our team.
+          </p>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/2 order-2 lg:order-1 md:order-1">
+          <img class="object-cover transform hover:scale-105 transition duration-500 ease-in-out"
+            src="./images/news-3.jpg" alt="1000 Hills Celebrations">
+        </div>
+      </section>
+      
+
+
+
+        <section
+            class="second-section flex flex-col md:flex-row w-[95%] sm:w-[85%] md:w-[80%] mx-auto justify-center items-center gap-8 mt-8">
+            <div class="flex order-2 lg:order-1 md:order-1 flex-col gap-4 w-full md:w-1/2 text-center md:text-left">
+                <div
+                    class="w-[50px] h-[50px] bg-[#00743F] rounded-full flex justify-center items-center mx-auto md:mx-0">
+                    <i class="fa fa-mountain text-black text-3xl"></i>
                 </div>
-            
-                <!-- Next and previous buttons -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <h2 class="text-[#00743F] font-bold text-xl md:text-2xl">Rising with 1000 Hills:</h2>
+                <h2 class="text-2xl md:text-3xl font-extrabold text-black">Real-world Impact</h2>
+                <p
+                    class="text-black font-bold lg:text-base text-start lg:text-lg md:text-md text-sm w-full mx-auto md:mx-0 px-1">
+                    With a spirit rooted in resilience and progress, 1000 Hills equips individuals to tackle real-world
+                    challenges through hands-on projects and collaborations. Our program fosters not only the technical
+                    skills needed for future opportunities but also the leadership and team-oriented mindset essential
+                    for success. Through mentorship, industry connections, and access to the latest technologies,
+                    participants are prepared to scale new heights and make an impact in their respective fields.
+                </p>
+            </div>
+            <div class="w-full md:w-1/2 lg:w-1/2 order-1 lg:order-2 md:order-2">
+                <img class="object-cover transform hover:scale-105 transition duration-500 ease-in-out"
+                    src="./images/red-club.jpeg" alt="1000 Hills">
             </div>
         </section>
 
-        <section>
-            
-        </section>
+
+        <section
+  class="third-section flex flex-col md:flex-row w-[90%] sm:w-[85%] md:w-[80%] mx-auto justify-center items-center gap-8 mt-8">
+  <div class="w-full md:w-1/2 lg:w-1/2">
+    <img class="object-cover transform hover:scale-105 transition duration-500 ease-in-out"
+      src="./images/kids-events.jpg" alt="1000 Hills Training">
+  </div>
+  <div class="flex flex-col gap-4 w-full md:w-2/3 text-center md:text-left">
+    <div class="w-[50px] h-[50px] bg-[#00743F] rounded-full flex justify-center items-center mx-auto md:mx-0">
+      <i class="fa fa-line-chart text-black text-3xl"></i>
+    </div>
+    <h2 class="text-[#00743F] font-bold text-xl">From Grassroots to Greatness:</h2>
+    <h2 class="text-2xl md:text-3xl font-extrabold text-black">Program Structure and Pathways:</h2>
+    <p
+      class="text-black font-bold lg:text-base text-start lg:text-lg md:text-md text-sm w-full mx-auto md:mx-0 px-1">
+      At 1000 Hills, our program is designed to elevate individuals from the grassroots to the pinnacle of their potential. The journey includes foundational training in essential skills, strategic development practices, and advanced techniques tailored to rugby. Participants engage in rigorous training, learn from experienced coaches, and apply their skills in real-world scenarios. By the end of the program, individuals are well-prepared for competitive play and leadership roles in the sport.
+    </p>
+  </div>
+</section>
+
+
+<section
+class="second-section flex flex-col md:flex-row w-[95%] sm:w-[85%] md:w-[80%] mx-auto justify-center items-center gap-8 mt-8">
+<div class="flex order-2 lg:order-1 md:order-1 flex-col gap-4 w-full md:w-1/2 text-center md:text-left">
+  <div class="w-[50px] h-[50px] bg-[#00743F] rounded-full flex justify-center items-center mx-auto md:mx-0">
+    <i class="fas fa-football-ball text-black text-3xl"></i>
+  </div>
+  <h2 class="text-[#00743F] font-bold text-xl">Join the Team:</h2>
+  <h2 class="text-2xl md:text-3xl font-extrabold text-black">Application Process:</h2>
+  <p
+    class="text-black font-bold lg:text-base text-start lg:text-lg md:text-md text-sm w-full mx-auto md:mx-0 px-1">
+    Ready to step up and be part of the 1000 Hills family? Apply through our website by filling out the application form with your details and rugby experience. Once submitted, our team will review your application and get in touch with you to discuss the next exciting steps. Don’t miss your chance to join a premier rugby team—complete the form today and get ready to make your mark on the field!
+  </p>
+</div>
+<div class="w-full md:w-1/2 lg:w-1/2 order-1 lg:order-2 md:order-2">
+  <img class="object-cover transform hover:scale-105 transition duration-500 ease-in-out"
+    src="./images/program-img-4.jpg" alt="1000 Hills Applications">
+</div>
+</section>
+
+
     </main>
 
-    <footer class="lg:w-full flex lg:flex-row flex-col text-white bg-black">
-        <div class="footer-logo lg:w-2/12 lg:mx-8 lg:-mt-2 w-full flex lg:justify-start justify-center items-center">
-            <img src="./images/1000-hills-logo.png" alt="Logo" width="150px" height="150px">
-        </div>
-        <div class="lg:w-3/12 w-full flex flex-col lg:mx-4 footer-info">
-            <p class="text-2xl font-bold">OUR COMPANY</p>
-            <p class="mt-9 text-center-1 w-10/12 text-lg font-thin">Lorem ipsum dolor sit amet consecteturs adipisicing
-                elit. Beatae saepe sapiente dicta aliquam ani</p>
-        </div>
-        <div class="lg:w-3/12 w-full flex flex-col footer-info mb-9">
-            <p class="flex text-2xl font-bold">WHAT WE DO</p>
-            <ul class="flex flex-col mt-9 text-center-1 gap-3 text-lg font-thin">
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Pricing Table</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Team</a></li>
-            </ul>
-        </div>
-        <div class="lg:w-2/12 w-full flex flex-col items-center">
-            <p class="flex text-2xl font-bold">CONNECT</p>
-            <ul class="flex lg:flex-row flex-col lg:gap-6 gap-3 mt-9 text-lg font-thin">
-                <li><a href="https://www.facebook.com/1000hillsrugby/"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li><a href="https://www.instagram.com/1000hillsrugby/"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href=" https://x.com/1000HillsRugby?t=S0PTUa88AFrp6SJs5meJ6A&s=08 "><i
-                            class="fa-brands fa-x-twitter"></i></a></li>
-                <li><a href="https://www.youtube.com/@1000HillsRugby"><i class="fa-brands fa-youtube"></i></a></li>
-            </ul>
-        </div>
-    </footer>
+
+    <footer
+    class="lg:w-full px-8 py-16 mt-10 flex lg:flex-row flex-col text-white bg-gradient-to-b from-black to-gray-900 lg:h-[60vh]">
+    <!-- Logo Section -->
+    <div class="footer-logo lg:w-2/12 w-full flex items-center justify-center lg:justify-start lg:mx-8 mb-8 lg:mb-0">
+      <img
+        class="lg:w-[150px] h-[150px] w-[120px] lg:h-[120px] object-contain transition-transform duration-300 hover:scale-105"
+        src="./images/1000-hills-logo.png" alt="Logo" />
+    </div>
+
+    <!-- Team Info Section -->
+    <div class="lg:w-3/12 w-full flex flex-col lg:mx-4 footer-info mb-8 lg:mb-0">
+      <p class="text-lg font-bold tracking-wide text-[#dcbb26] uppercase">Team</p>
+      <ul class="mt-6 text-[#a5a6a8] text-sm font-light flex flex-col gap-3">
+        <li class="hover:text-[#dcbb26] transition-colors duration-300"><a href="#">Pro Placement Program</a></li>
+        <li class="hover:text-[#dcbb26] transition-colors duration-300"><a href="#">Academy Development</a></li>
+        <li class="hover:text-[#dcbb26] transition-colors duration-300"><a href="#">Specialist Program</a></li>
+        <li class="hover:text-[#dcbb26] transition-colors duration-300"><a href="#">Junior Summer Program</a></li>
+        <li class="hover:text-[#dcbb26] transition-colors duration-300"><a href="#">Coaching Staff</a></li>
+      </ul>
+    </div>
+
+    <!-- Club Info Section -->
+    <div class="lg:w-3/12 w-full flex flex-col mb-8 lg:mb-0">
+      <p class="text-lg font-bold tracking-wide text-[#dcbb26] uppercase">Club</p>
+      <ul class="mt-6 text-[#a5a6a8] text-sm font-light flex flex-col gap-3">
+        <li class="hover:text-[#dcbb26] transition-colors duration-300"><a href="./about.html">About Us</a></li>
+        <li class="hover:text-[#dcbb26] transition-colors duration-300"><a href="#">History</a></li>
+        <li class="hover:text-[#dcbb26] transition-colors duration-300"><a href="./services.html">Services</a></li>
+        <li class="hover:text-[#dcbb26] transition-colors duration-300"><a href="#">News & Media</a></li>
+        <li class="hover:text-[#dcbb26] transition-colors duration-300"><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="lg:w-4/12 w-full flex flex-col">
+      <div class="mb-8">
+        <p class="text-lg font-bold tracking-wide text-[#dcbb26] uppercase">Contact</p>
+        <ul class="mt-6 text-[#a5a6a8] text-sm font-light flex flex-col gap-3">
+          <li class="flex items-center hover:text-[#dcbb26] transition-colors duration-300">
+            <i class="text-[#006838] mr-2 fa-solid fa-phone"></i>1-800-1-900
+          </li>
+          <li class="flex items-center hover:text-[#dcbb26] transition-colors duration-300">
+            <i class="text-[#006838] mr-2 fa-solid fa-envelope"></i>info@campo.com
+          </li>
+          <li class="flex items-center hover:text-[#dcbb26] transition-colors duration-300">
+            <i class="text-[#006838] mr-2 fa-solid fa-location-dot"></i>60 East 65th Street, Minneapolis
+          </li>
+        </ul>
+      </div>
+
+      <!-- Social Media Section -->
+      <div>
+        <p class="text-lg font-bold tracking-wide text-[#dcbb26] uppercase">Connect</p>
+        <ul class="mt-4 flex gap-6 text-2xl">
+          <li class="hover:text-[#1877F2] transition-colors duration-300">
+            <a href="https://www.facebook.com/1000hillsrugby/" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="hover:text-[#E4405F] transition-colors duration-300">
+            <a href="https://www.instagram.com/1000hillsrugby/" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li class="hover:text-[#1DA1F2] transition-colors duration-300">
+            <a href="https://x.com/1000HillsRugby?t=S0PTUa88AFrp6SJs5meJ6A&s=08" aria-label="Twitter">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </li>
+          <li class="hover:text-[#FF0000] transition-colors duration-300">
+            <a href="https://www.youtube.com/@1000HillsRugby" aria-label="YouTube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+    <script src="./menu.js"></script>
 </body>
+
 </html>
